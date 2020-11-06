@@ -1,1 +1,4 @@
-console.log("Welcome to the main module")
+import {getComputers, useComputers} from "./computers/computerDataProvider.js"
+import { EmployeeList } from "./employees/EmployeeList.js"
+
+EmployeeList()
