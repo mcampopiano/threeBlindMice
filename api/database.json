@@ -32,35 +32,58 @@
             "firstName": "Rainu",
             "lastName": "Ittycheriah",
             "age": 22,
-            "computerId": 5
+            "computerId": 5,
+            "departmentId": 3
         },
         {
             "id": 2,
             "firstName": "Bilbo",
             "lastName": "Baggins",
             "age": 111,
-            "computerId": 3
+            "computerId": 3,
+            "departmentId": 1
         },
         {
             "id": 3,
             "firstName": "Gandalf",
             "lastName": "Greyhame",
             "age": 3000,
-            "computerId": 2
+            "computerId": 2,
+            "departmentId": 4
         },
         {
             "id": 4,
             "firstName": "Aragorn",
             "lastName": "Arathornson",
             "age": 87,
-            "computerId": 1
+            "computerId": 1,
+            "departmentId": 4
         },
         {
             "id": 5,
             "firstName": "Peregrin",
             "lastName": "Took",
             "age": 40,
-            "computerId": 4
+            "computerId": 4,
+            "departmentId": 1
+        }
+    ],
+    "Departments": [
+        {
+            "id": 1,
+            "name": "Sales"
+        },
+        {
+            "id": 2,
+            "name": "Accounting"
+        },
+        {
+            "id": 3,
+            "name": "Developers"
+        },
+        {
+            "id": 4,
+            "name": "Consulting"
         }
     ]
 }
