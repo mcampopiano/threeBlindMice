@@ -33,7 +33,8 @@
             "lastName": "Ittycheriah",
             "age": 22,
             "computerId": 5,
-            "departmentId": 3
+            "departmentId": 3,
+            "locationId": 2
         },
         {
             "id": 2,
@@ -41,7 +42,8 @@
             "lastName": "Baggins",
             "age": 111,
             "computerId": 3,
-            "departmentId": 1
+            "departmentId": 1,
+            "locationId": 1
         },
         {
             "id": 3,
@@ -49,7 +51,8 @@
             "lastName": "Greyhame",
             "age": 3000,
             "computerId": 2,
-            "departmentId": 4
+            "departmentId": 4,
+            "locationId": 3
         },
         {
             "id": 4,
@@ -57,7 +60,8 @@
             "lastName": "Arathornson",
             "age": 87,
             "computerId": 1,
-            "departmentId": 4
+            "departmentId": 4,
+            "locationId": 2
         },
         {
             "id": 5,
@@ -65,7 +69,8 @@
             "lastName": "Took",
             "age": 40,
             "computerId": 4,
-            "departmentId": 1
+            "departmentId": 1,
+            "locationId": 1
         }
     ],
     "Departments": [
@@ -84,6 +89,20 @@
         {
             "id": 4,
             "name": "Consulting"
+        }
+    ],
+    "Locations": [
+        {
+            "id": 1,
+            "name": "Nashville"
+        },
+        {
+            "id": 2,
+            "name": "Mempthis"
+        },
+        {
+            "id": 3,
+            "name": "Atlanta"
         }
     ]
 }
