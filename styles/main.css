@@ -28,10 +28,15 @@ body {
 }
 
 .employeeCards, .customerCards {
-	border: 3px solid black;
 	padding: 5px;
 }
 
+.employeeCard, .customerCard {
+	border: 5px solid black;
+	margin-top: 5px;
+	padding: 3px;
+}
+
 .employeeCard:hover, .customerCard:hover {
-	background-color: #669d31;
+	box-shadow: 5px -5px 3px;
 }

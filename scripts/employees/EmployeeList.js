@@ -34,7 +34,7 @@ const render = () => {
             <h3>${employee.firstName} ${employee.lastName}</h3>
             <p>Age: ${employee.age}</p>
             <p>Computer model: ${computer.model}</p>
-            <p>Computer manufactuer year: ${computer.year}</p>
+            <p>Computer manufacturer year: ${computer.year}</p>
             <p>Department: ${department.name}</p>
             <p>Office: ${location.name}</p>
             <p>Customers Worked for:</p>
