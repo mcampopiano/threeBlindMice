@@ -7,7 +7,7 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
+	color: #11270b;
 	font-family: "Comfortaa", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
@@ -18,7 +18,20 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
+body {
+	background-color: #96939b;
+}
+
 .card-display {
 	display: flex;
 	justify-content: space-around;
+}
+
+.employeeCards, .customerCards {
+	border: 3px solid black;
+	padding: 5px;
+}
+
+.employeeCard:hover, .customerCard:hover {
+	background-color: #669d31;
 }
