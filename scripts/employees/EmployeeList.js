@@ -4,7 +4,7 @@ import { getLocations, useLocations } from "../locations/locationProvider.js"
 import { getEmployees, useEmployees } from "./employeeDataProvider.js"
 import {getCustomers, useCustomers} from "../customers/customerProvider.js"
 import {getEmployeeCustomers, useEmployeeCustomers} from "../customers/employeeCustomerProvider.js"
-const contentContainer = document.querySelector(".employeeCard")
+const contentContainer = document.querySelector(".employeeCards")
 
 let employeeArr = []
 let computerArr = []
@@ -14,6 +14,7 @@ let customers = []
 let employeeCustomers = []
 
 const render = () => {
+        let employeeString = ""
         employeeArr.forEach(employee => {
             // Get the mathcing computer
             const computer = computerArr.find(computerObj => computerObj.id === employee.computerId)
@@ -28,8 +29,9 @@ const render = () => {
                 const customer = customers.find(co => co.id === obj.customerId)
                 return customer
             })
-            contentContainer.innerHTML += `
-            <h2>${employee.firstName} ${employee.lastName}</h2>
+            employeeString += `
+            <div class="employeeCard">
+            <h3>${employee.firstName} ${employee.lastName}</h3>
             <p>Age: ${employee.age}</p>
             <p>Computer model: ${computer.model}</p>
             <p>Computer manufactuer year: ${computer.year}</p>
@@ -39,8 +41,11 @@ const render = () => {
             <ul>
                 ${relatedCustomers.map(customer => `<li>${customer.name}</li>`).join("")}
             </ul>
+            </div>
             `
         })
+        contentContainer.innerHTML = `<h2>Employee List</h2>
+        ${employeeString}`
 }
 
 export const EmployeeList = () => {
